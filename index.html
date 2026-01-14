@@ -2,13 +2,119 @@
 <html>
 <head>
     <link rel="stylesheet" href="GameDevStyle.css">
+    <style>
+        /* Content */
+        .sectionTitle{
+            color: rgb(121, 121, 121);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;    
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            margin-top: 40px;
+            margin-bottom: 10px;    
+        }
+
+        .gamesSection{
+        }
+
+        .gameCardWrapper{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gameCard{
+            display: flex;
+            flex-direction: column;
+            background-color: #111111;
+            overflow: hidden;
+            width: 19%;
+            padding-bottom: 10px;
+            margin: .5%;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .gameCard * {
+            pointer-events: none;
+        }
+
+        .gameCard:hover {    
+            transform: scale(1.02);    
+        }
+
+        .gameImage{
+            width: 100%;
+            aspect-ratio: 1;    
+            overflow: hidden;
+            display: flex;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .gameInfoWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .gameTitleWrapper {
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gameTitle{
+            color: white;
+            font-family: Copperplate, Papyrus, fantasy;
+            font-size: 30px;
+            text-align: center;
+            margin: 10px; 
+        }
+
+        .gameProductionDate{
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;    
+        }
+
+        .gameTagWrapper{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;        
+        }
+
+        .gameTag{
+            background-color: #12b4ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        }
+    </style>
 </head>
 <body>
 <div class="topBar">
     Jude Deffee 
+    <div class="navButtons">
+        <a href="index.html" class="active">Games</a>        
+    </div>
     <div class="contactWrapper">
         <a href="mailto:judecommerce@outlook.com">Email: judecommerce@outlook.com</a><br>
-        <a href="tel:+447555761493">Phone: +44 7555761493</a></div>
+        <a href="tel:+447555761493">Phone: +44 7555761493</a>
+    </div>
 </div>
 <div class="titleCard">
     <video id="showReel" autoplay muted playsinline loop>
@@ -24,10 +130,10 @@
         <div class="gameType">HTML / JS / CSS</div>
     </div>
 </div>
-<div class="professionalGamesSection">
+<div class="gamesSection">
     <div class="sectionTitle">PROFESSIONAL GAMES</div>
     <div class="gameCardWrapper">
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='ProfessionalGames/VolcanoIsland.html';">
         <div class="gameImage" style="background-image: url(Media/VolcanoIsland.png);">            
         </div>
         <div class="gameInfoWrapper">
@@ -41,9 +147,9 @@
                 <div class="gameTag">Android</div>
                 <div class="gameTag">IOS</div>
             </div>
-        </div>      
-    </div>    
-    <div class="gameCard" onclick="location.href='index.html';">
+        </div>
+    </div>
+    <div class="gameCard" onclick="location.href='ProfessionalGames/DobbleAds.html';">
         <div class="gameImage" style="background-image: url(Media/Dobble.png);">            
         </div>
         <div class="gameInfoWrapper">
@@ -58,7 +164,7 @@
             </div>
         </div>      
     </div>
-    <div class="gameCard" onclick="location.href='index.html';">
+    <div class="gameCard" onclick="location.href='ProfessionalGames/KidsGame.html';">
         <div class="gameImage" style="background-image: url(Media/Padlock.png);">                 
         </div>
         <div class="gameInfoWrapper">
@@ -73,7 +179,7 @@
             </div>
         </div>      
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick=" location.href='ProfessionalGames/Afcb.html';">
         <div class="gameImage" style="background-image: url(Media/AFCB.png);">            
         </div>
         <div class="gameInfoWrapper">
@@ -89,15 +195,15 @@
         </div>      
     </div>
 </div>
-<div class="personalGamesSection">
+<div class="gamesSection">
     <div class="sectionTitle">PERSONAL GAMES</div>
     <div class="gameCardWrapper">
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/HumanVariable.html';">
         <div class="gameImage" style="background-image: url(Media/HumanVariable.png);">            
         </div>
         <div class="gameInfoWrapper">
             <div class="gameTitleWrapper">
-                <div class="gameTitle">Unannounced lab game</div>
+                <div class="gameTitle">The human variable</div>
             </div>
             <div class ="gameProductionDate">Dec 2025 - Present</div>
             <div class="gameTagWrapper">
@@ -107,7 +213,7 @@
             </div>
         </div>      
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/Dungeon.html';">
         <div class="gameImage" style="background-image: url(Media/Dungeon1.png);">
         </div>
         <div class="gameInfoWrapper">
@@ -122,7 +228,7 @@
             </div>
         </div>      
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/CrushDepth.html';">
         <div class="gameImage" style="background-image: url(Media/CrushDepth.png);">            
         </div>
         <div class="gameInfoWrapper">
@@ -137,7 +243,7 @@
             </div>
         </div>      
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/DriftRacer.html';">
         <div class="gameImage" style="background-image: url(Media/DriftRacer.png);">            
         </div>
         <div class="gameInfoWrapper">
@@ -152,7 +258,7 @@
             </div>
         </div>  
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/PersonalJam.html';">
         <div class="gameImage" style="background-image: url(Media/PersonalJam.jpg);">            
         </div>
         <div class="gameInfoWrapper">
@@ -167,7 +273,7 @@
             </div>
         </div>  
     </div>
-    <div class="gameCard">
+    <div class="gameCard" onclick="location.href='PersonalGames/TalkingBen.html';">
         <div class="gameImage" style="background-image: url(Media/TalkingBen.webp);">            
         </div>
         <div class="gameInfoWrapper">

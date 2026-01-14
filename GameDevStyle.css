@@ -1,6 +1,7 @@
 /* Global */
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -56,6 +57,30 @@ body {
     color: #12b4ff;             /* optional hover color */
 }
 
+.navButtons{
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.navButtons a {    
+    padding: 6px 12px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 20px;
+    height: 100%;
+}
+
+.navButtons a.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+.navButtons a:hover {
+    background-color: #ffffff;
+    color: black;
+}
 
 /* Title card */
 .titleCard{
@@ -101,109 +126,4 @@ body {
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 2px solid #ffffff;
-}
-
-
-/* Content */
-.sectionTitle{
-    color: rgb(121, 121, 121);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;    
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 10px;    
-}
-
-.professionalGamesSection{    
-}
-
-.personalGamesSection{    
-}
-
-.gameCardWrapper{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gameCard{
-    display: flex;
-    flex-direction: column;
-    background-color: #111111;
-    overflow: hidden;
-    width: 19%;
-    padding-bottom: 10px;
-    margin: .5%;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.gameCard * {
-    pointer-events: none;
-}
-
-.gameCard:hover {    
-    transform: scale(1.02);    
-}
-
-.gameImage{
-    width: 100%;
-    aspect-ratio: 1;    
-    overflow: hidden;
-    display: flex;
-    background-position: center;
-    background-size: cover;
-}
-
-.gameInfoWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-}
-
-.gameTitleWrapper {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gameTitle{
-    color: white;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 30px;
-    text-align: center;
-    margin: 10px; 
-}
-
-.gameProductionDate{
-    color: gray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;    
-}
-
-.gameTagWrapper{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;        
-}
-
-.gameTag{
-    background-color: #12b4ff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }

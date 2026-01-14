@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../GameDevStyle.css">
+    <style>
+        .contentWrapper {
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .sectionTitle {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .textBlock {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="topBar">
+    Jude Deffee 
+    <div class="navButtons">
+        <a href="../index.html">Games</a>        
+    </div>
+    <div class="contactWrapper">
+        <a href="mailto:judecommerce@outlook.com">Email: judecommerce@outlook.com</a><br>
+        <a href="tel:+447555761493">Phone: +44 7555761493</a>
+    </div>
+</div>
+<div class="titleCard">
+    <video id="showReel" autoplay muted playsinline loop>
+        <source src="Media/ShowReel.mp4" type="video/mp4">
+    </video>
+    Unannounced Kids Game
+    <div class="gameTypeWrapper">
+        <div class="gameType">Unity</div>                
+        <div class="gameType">C#</div>                
+        <div class="gameType">Android</div>
+        <div class="gameType">IOS</div>
+    </div>
+</div>
+<div class="contentWrapper">
+    <div class="sectionTitle">ABOUT THE GAME</div>
+    <div class="textBlock">
+        The game is a premium mobile game targetted at young children. The game is designed to be both educational and entertaining, featuring a variety of mini-games and activities that promote learning through play. The game will feature multiple minigames each tailored to kids, taking inspiration from Marvel HQ. The game has a kid friendly layout and art style, with bright colours and engaging imagry.
+    </div>
+    <div class="sectionTitle">MY CONTRIBUTIONS</div>
+    <div class="textBlock">
+        I programmed a jigsaw puzzle minigame from scratch using Unity and C#. Most notably the jigsaw puzzle is procedurally generated, using a source image combined with a custom compute shader i programmed to create puzzle pieces relavant to their position, with only two images to allow for quick styling and modification. Alongside this I implemented a piece seperation mechanic allowing for pieces to push each other appart, to achieve this in a performant way i learnt about spatial partitioning and implemented a grid based system to only check collisions between nearby pieces.
+    </div>
+</body>
+</html>
