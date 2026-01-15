@@ -46,15 +46,15 @@ body {
 }
 
 .contactWrapper a {
-    color: white;            /* same as top bar text */
-    text-decoration: none;   /* remove underline */
+    color: white;
+    text-decoration: none;
     font-weight: normal;
     font-size: 16px;
 }
 
 .contactWrapper a:hover {
-    text-decoration: underline; /* optional hover effect */
-    color: #12b4ff;             /* optional hover color */
+    text-decoration: underline;
+    color: #12b4ff;
 }
 
 .navButtons{
@@ -95,8 +95,8 @@ body {
     font-size: 100px;
     font-weight: bold;
     position: relative;
-    background-color: black;
-    z-index: -2;
+    background-color: black; 
+    z-index: 2;  
 }
 
 #showReel {
@@ -109,6 +109,7 @@ body {
     z-index: -1;
     opacity: 0.6;
     filter: blur(0.1rem);    
+    pointer-events: none;    
 }
 
 .gameTypeWrapper{
@@ -116,6 +117,7 @@ body {
     flex-direction: row;
     gap: 20px;
     margin-top: 0px;
+    z-index: 1;
 }
 
 .gameType{
@@ -126,4 +128,63 @@ body {
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 2px solid #ffffff;
+}
+
+/* Store link buttons */
+.storeLinkWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;    
+}
+
+.storeLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);    
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+.storeLink:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.playStoreLink {
+    background-image: url('Media/PlayLogo.png');
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.itchStoreLink {
+    background-image: url('Media/ItchLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size:60%;
+    background-position: center; 
+}
+
+.gameJoltStoreLink {
+    background-image: url('Media/GameJoltLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size:60%;
+    background-position: center; 
+}
+
+/* Content Wrapper */
+.video-wrapper {
+    position: relative;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
