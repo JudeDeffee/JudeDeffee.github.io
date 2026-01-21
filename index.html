@@ -26,7 +26,7 @@
             margin-bottom: 50px;
             flex-wrap: wrap;
             justify-content: center;
-        }
+        }        
 
         .gameCard{
             display: flex;
@@ -38,6 +38,24 @@
             margin: .5%;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .gameTitle{
+            color: white;
+            font-family: Copperplate, Papyrus, fantasy;
+            font-size: 30px;
+            text-align: center;
+            margin: 10px; 
+        }
+
+        @media (max-width: 1450px) {
+            .gameCard{
+                width: 26%;
+            }
+
+            .gameTitle{
+                font-size: 25px;
+            }
         }
 
         .gameCard * {
@@ -70,15 +88,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .gameTitle{
-            color: white;
-            font-family: Copperplate, Papyrus, fantasy;
-            font-size: 30px;
-            text-align: center;
-            margin: 10px; 
-        }
+        }        
 
         .gameProductionDate{
             color: gray;
